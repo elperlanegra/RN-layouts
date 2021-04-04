@@ -4,7 +4,7 @@ import {Text, StyleSheet, Image, View, ScrollView} from 'react-native';
 const App = () => {
   return (
     <>
-      <View>
+      <ScrollView>
         <View style={{flexDirection: 'row'}}>
           <Image
             style={styles.banner}
@@ -15,14 +15,12 @@ const App = () => {
         <View style={styles.contenedor}>
           <Text style={styles.titulo}>Que Hacer en paris</Text>
           <ScrollView horizontal>
-
             <View>
               <Image
                 style={styles.ciudad}
                 source={require('./assets/img/actividad1.jpg')}
               />
             </View>
-
 
             <View>
               <Image
@@ -46,15 +44,66 @@ const App = () => {
             </View>
 
             <View>
-              
               <Image
                 style={styles.ciudad}
                 source={require('./assets/img/actividad5.jpg')}
               />
             </View>
           </ScrollView>
+
+          <Text style={styles.titulo}>Los Mejores Alojamientos</Text>
+
+          <View>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/mejores1.jpg')}
+            />
+          </View>
+
+          <View >
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/mejores2.jpg')}
+            />
+          </View>
+
+          <View>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/mejores3.jpg')}
+            />
+          </View>
         </View>
-      </View>
+
+        <Text style={styles.titulo}>Hospedajes en Bilwi</Text>
+
+        <View style={styles.listado}>
+          <View style={styles.listadoItem}>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/hospedaje1.jpg')}
+            />
+          </View>
+          <View style={styles.listadoItem}>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/hospedaje2.jpg')}
+            />
+          </View>
+          <View style={styles.listadoItem}>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/hospedaje3.jpg')}
+            />
+          </View>
+          <View style={styles.listadoItem}>
+            <Image
+              style={styles.mejores}
+              source={require('./assets/img/hospedaje4.jpg')}
+            />
+          </View>
+        </View>
+      </ScrollView>
     </>
   );
 };
@@ -67,16 +116,29 @@ const styles = StyleSheet.create({
   titulo: {
     fontSize: 24,
     fontWeight: 'bold',
-    marginVertical: 20
+    marginVertical: 20,
   },
-  contenedor:{
-    marginHorizontal: 10
+  contenedor: {
+    marginHorizontal: 10,
   },
 
   ciudad: {
     width: 250,
     height: 300,
-    marginRight: 10
+    marginRight: 10,
+  },
+  mejores: {
+    width: '100%',
+    height: 200,
+    marginVertical: 5,
+  },
+  listado: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between'
+  },
+  listadoItem: {
+    flexBasis: '49%'
   }
 });
 
