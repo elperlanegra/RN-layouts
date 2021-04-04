@@ -60,7 +60,7 @@ const App = () => {
             />
           </View>
 
-          <View >
+          <View>
             <Image
               style={styles.mejores}
               source={require('./assets/img/mejores2.jpg')}
@@ -73,34 +73,34 @@ const App = () => {
               source={require('./assets/img/mejores3.jpg')}
             />
           </View>
-        </View>
 
-        <Text style={styles.titulo}>Hospedajes en Bilwi</Text>
+          <Text style={styles.titulo}>Hospedajes en Bilwi</Text>
 
-        <View style={styles.listado}>
-          <View style={styles.listadoItem}>
-            <Image
-              style={styles.mejores}
-              source={require('./assets/img/hospedaje1.jpg')}
-            />
-          </View>
-          <View style={styles.listadoItem}>
-            <Image
-              style={styles.mejores}
-              source={require('./assets/img/hospedaje2.jpg')}
-            />
-          </View>
-          <View style={styles.listadoItem}>
-            <Image
-              style={styles.mejores}
-              source={require('./assets/img/hospedaje3.jpg')}
-            />
-          </View>
-          <View style={styles.listadoItem}>
-            <Image
-              style={styles.mejores}
-              source={require('./assets/img/hospedaje4.jpg')}
-            />
+          <View style={styles.listado}>
+            <View style={styles.listadoItem}>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/hospedaje1.jpg')}
+              />
+            </View>
+            <View style={styles.listadoItem}>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/hospedaje2.jpg')}
+              />
+            </View>
+            <View style={styles.listadoItem}>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/hospedaje3.jpg')}
+              />
+            </View>
+            <View style={styles.listadoItem}>
+              <Image
+                style={styles.mejores}
+                source={require('./assets/img/hospedaje4.jpg')}
+              />
+            </View>
           </View>
         </View>
       </ScrollView>
@@ -135,11 +135,11 @@ const styles = StyleSheet.create({
   listado: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
   listadoItem: {
-    flexBasis: '49%'
-  }
+    flexBasis: '49%',
+  },
 });
 
 export default App;
